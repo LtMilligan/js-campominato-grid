@@ -9,6 +9,7 @@ btnStart.addEventListener('click', function() {
             console.log(currentSquare.innerText)
         })
         currentSquare.innerText = i + 1;
+        grid.append(currentSquare)
     }
 
 })
