@@ -2,6 +2,9 @@ const grid = document.getElementById('grid');
 const btnStart = document.getElementById('btn-start')
 
 btnStart.addEventListener('click', function() {
+    while (grid.hasChildNodes()) {
+        grid.removeChild(grid.firstChild);
+      }
     for (let i = 0; i < 100; i++) {
         let currentSquare = createSquare()
         currentSquare.addEventListener('click', function() {
